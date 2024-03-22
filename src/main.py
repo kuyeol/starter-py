@@ -1,6 +1,10 @@
 from appwrite.client import Client
 import os
+from string import digits
+from itertools import product
 
+for passcode in product(digits, repeat=4):
+    print(*passcode)
 
 # This is your Appwrite function
 # It's executed each time we get a request
